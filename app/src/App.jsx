@@ -2,6 +2,8 @@ import './App.css'
 
 import React from 'react';
 import Welcome from './components/Welcome';
+import Counter from './components/Counter';
+import SharedCounter from './components/SharedCounter';
 
 class App extends React.Component {
   constructor(props) {
@@ -11,9 +13,14 @@ class App extends React.Component {
   render() {
     return (
         <div>
-            { /* Change code below this line */ }
-            <Welcome name="Foo"/>
-            { /* Change code above this line */ }
+            <h1>Two Counter, Two States Example</h1>
+            <Counter></Counter>
+            <Counter></Counter>
+
+            <br></br>
+            
+            <h1>Shared Counter State Example</h1>
+            <SharedCounter></SharedCounter>            
         </div>
     );
   }
